@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(38, 115, 167);
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.pw-container{
+    width: 700px;
+    background-color: rgb(12, 84, 112);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px 60px;
+}
+.pw-header{
+    padding: 1rem;
+}
+.pw{
+    width: 100%;
+    border-radius: 10px 60px 10px 10px;
+    height: 70px;
+    background-color: rgb(38, 115, 167);
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+     padding: 1rem;
+}
+.pw button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    background-color: rgb(9, 59, 78);
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.pw:hover button{
+opacity: 1;
+transform: translate(0,-80%);
+}
+.pw-body{
+    padding: 0 1rem 1rem;
+    font-size: 1.2rem;
+}
+.form-control{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+
+}
+.form-control input[type=checkbox]{
+  transform: scale(2);
+  padding: 10px;
+  background-color: #f7e712;
+}
+.checkboxtext
+{
+  font-size: 110%;
+  display: inline;
+}
+.generate{
+    display: block;
+    background-color: #f7e712;
+    border-radius: 10px 10px 10px 60px;
+    color: rgb(13, 99, 148);
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+:first-child.form-control input{
+    background-color: rgb(208, 243, 243);
+    width: 25.14px;
+    height: 25.14px;
+    padding-left: 2px;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    border-radius: 5px;
+}
+:first-child.form-control {
+   width: 42.1rem;
+}
+:first-child.form-control input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+    h1{
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    }
